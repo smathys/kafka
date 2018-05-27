@@ -12,4 +12,4 @@ background : assets/image/binary.jpg
 background-opacity : 10
 transition : none
 published : true
-footnote : "Susanne Mathys - <a href="https://gitpitch.com/smathys/kafka/master#/">Apache Kafka</a>"
+footnote : "Susanne Mathys - <a href='https://gitpitch.com/smathys/kafka/master#/'>Apache Kafka</a>"
