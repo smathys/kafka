@@ -14,7 +14,8 @@ Kafka® is used for building real-time data pipelines and streaming apps. It is 
 +++  
 
 used for:
-* read & write streams of data like a messaging system (pub/sub & queue messaging)
+* read & write streams of data like a messaging system  
+ (pub/sub and queue messaging)
 * stream processing
 * store streams of data safely in distributed, replicated, fault tolerant cluster
 ---
@@ -77,9 +78,12 @@ Kafka's support for very large stored log data makes it an excellent backend for
 
 ---
 ## Wrap Up!
-* performance -> handle a large number of diverse consumers
-* performance -> It maintains stable performance even many TB of messages are stored
-* performance ->  high throughput for both publishing and subscribing messages
+* performance
+  * handle a large number of diverse consumers
+* performance
+  * it maintains stable performance even many TB of messages are stored
+* performance
+  * high throughput for both publishing and subscribing messages
 * scalable
 * fault tolerant
 * strong ordering guarantees
