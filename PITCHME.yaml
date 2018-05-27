@@ -8,8 +8,8 @@ theme : beige
 theme-override : assets/css/PITCHME.css
 # theme-override : assets/css/PITCHME.codemax.css
 highlight : github-gist
-logo : assets/image/kafka-logo.png
-background : assets/image/binary-strings-white.jpg
+logo : assets/image/logo-1.jpg
+background : assets/image/binary.jpg
 background-opacity : 10
 transition : none
 published : true
