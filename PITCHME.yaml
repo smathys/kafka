@@ -6,9 +6,8 @@
 #
 theme : beige
 theme-override : assets/css/PITCHME.css
-# theme-override : assets/css/PITCHME.codemax.css
 highlight : github-gist
-logo : assets/image/logo-1.jpg
+logo : assets/image/kafka-logo-tall.png
 background : assets/image/binary.jpg
 background-opacity : 10
 transition : none
