@@ -24,8 +24,9 @@
 ---
 
 ### Overview
-+++
-@title[architecture]
++++  
+@title[architecture]  
+
 ![cluster](https://www.tutorialspoint.com/apache_kafka/images/fundamentals.jpg)
 +++  
 ### Cluster
