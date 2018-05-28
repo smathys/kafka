@@ -10,9 +10,9 @@
 +++  
 ### Where?  
 
-![fits](https://www.confluent.io/wp-content/uploads/chart-kafka-infrastructure@2x.png)
+![fits](assets/image/chart-kafka.jpg)
 
-[Kafka Clients](https://cwiki.apache.org/confluence/display/KAFKA/Clients)
+[see available Kafka Clients](https://cwiki.apache.org/confluence/display/KAFKA/Clients)
 
 +++  
 
@@ -34,6 +34,13 @@
 * Horizontal scale out without downtime 
 * Manage the persistence and replication of message data
 +++ 
+### Broker
+* Kafka cluster typically consists of multiple brokers to maintain load balance
+* Kafka brokers are stateless ( ZooKeeper is used for maintaining their cluster state)
+* One Kafka broker instance can handle hundreds of thousands of reads and writes per second
+* Each broker can handle TB of messages without performance impact.
+* Kafka broker leader election by ZooKeeper.  
++++
 ### Topic
 ![topic](https://kafka.apache.org/0102/images/log_anatomy.png)
 * A partition is a set of segment files of equal sizes
@@ -53,26 +60,26 @@
 * Manages the offset (index from which one wants to read from)  
 +++
 
-### Broker
-* Kafka cluster typically consists of multiple brokers to maintain load balance
-* Kafka brokers are stateless ( ZooKeeper is used for maintaining their cluster state)
-* One Kafka broker instance can handle hundreds of thousands of reads and writes per second
-* Each broker can handle TB of messages without performance impact.
-* Kafka broker leader election can be done by ZooKeeper.  
 ---
 ### Ecosystem
-![ecosystem](https://kafka.apache.org/11/images/kafka-apis.png)
+![ecosystem](assets/image/kafka-apis.jpg)
 +++
-### Connect
-* easy to add new systems to your stream data pipelines
-*  move large collections of data into and out of Kafka
-[Connectors](https://www.confluent.io/product/connectors)
+### Kafka Connect
+* easy to add new systems to your existings data pipelines
+* move large collections of data into and out of Kafka
+* [Connectors](https://www.confluent.io/product/connectors)
 
 +++
-### Stream Processors  
+### Kafka Streams  
 * enable real-time processing of streams
 * stateless stream processing
-* stateful aggregation
+* local storage in streams
+* stateful aggregations,filtering,transformations
+* small lightweight microservices instead of batch processing at big data clusters
+
+### KSQL
+* Streaming SQL Engine
+* use SQL on top of Kafka Streams for processing streams
 ---
 ## Use Cases
 +++  
@@ -102,10 +109,10 @@ Kafka's support for very large stored log data makes it an excellent backend for
   * high throughput for both publishing and subscribing messages
 * scalable
 * distributed storage
-  * immediatly written to disk and replicated (fault-tolerance)
+  * immediately written to disk and replicated (fault-tolerance)
   * strong ordering guarantees, configurable retention period
 * flexible consuming
-  * consumer can rewind back to an old offset / re-consume data
-  * load balanced with using same consumer-group
+  * consumer can re-consume & reprocess already read messages
+  * load balanced with using same consumer-group dynamically
 
 
