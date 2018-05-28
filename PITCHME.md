@@ -65,7 +65,7 @@
 ![ecosystem](assets/image/kafka-apis.jpg)
 +++
 ### Kafka Connect
-* easy to add new systems to your existings data pipelines
+* easy to add new systems to your existing data pipelines
 * move large collections of data into and out of Kafka
 * [Connectors](https://www.confluent.io/product/connectors)
 
@@ -81,6 +81,7 @@
 ### KSQL
 * Streaming SQL Engine
 * use SQL on top of Kafka Streams for processing streams
+* sliding windows, windowing functions
 ---
 ## Use Cases
 +++  
@@ -100,7 +101,7 @@ Kafka's support for very large stored log data makes it an excellent backend for
 * Data Migration from v1 to v2: new v2 service can read all input-data from the topic again, stores data in its new format
 * Events: Events come into the system via kafka-queue, multiple microservices read that topic at different times
 * Fallback: persistent Dead-Letter Queue
-* Bug-Fixing: simply re-read the whole topic after fixing a bug which affected meassage processing
+* Bug-Fixing: simply re-read the whole topic after fixing a bug which affected massage processing
 ---  
 
 ## Wrap Up!
