@@ -3,12 +3,12 @@
 ### A distributed streaming platform
 
 ---
-@title[Why Kafka?]
+### Why?
 
 Kafka® is used for building real-time data pipelines and streaming apps. It is **horizontally scalable**, **fault-tolerant**, **wicked fast**, and runs in production in thousands of companies.
 
 +++  
-### Where to use Kafka?  
+### Where?  
 
 ![fits](https://www.confluent.io/wp-content/uploads/chart-kafka-infrastructure@2x.png)
 +++  
@@ -20,7 +20,7 @@ used for:
 * store streams of data safely in distributed, replicated, fault tolerant cluster
 ---
 
-## Some Concepts
+### Overview
 +++
 
 ![cluster](https://www.tutorialspoint.com/apache_kafka/images/fundamentals.jpg)
@@ -34,6 +34,7 @@ used for:
 ![topic](https://kafka.apache.org/0102/images/log_anatomy.png)
 * A partition is a set of segment files of equal sizes
 * Each partition contains messages in an immutable ordered sequence  
+* Each partition is consumed by exactly one consumer in the group
 +++ 
 ### Producer
 * Publisher of messages to one or more Kafka topics
@@ -55,9 +56,12 @@ used for:
   * Each broker can handle TB of messages without performance impact.
   * Kafka broker leader election can be done by ZooKeeper.  
 ---
-## Ecosystem
+### Ecosystem
 ![ecosystem](https://kafka.apache.org/11/images/kafka-apis.png)
-
++++
+### Connect
++++
+### Stream Processors
 ---
 ## Use Cases
 +++  
@@ -78,15 +82,16 @@ Kafka's support for very large stored log data makes it an excellent backend for
 
 ---
 ## Wrap Up!
-* performance
+* performance !!!
   * handle a large number of diverse consumers
-* performance
-  * it maintains stable performance even many TB of messages are stored
-* performance
+  * stable performance even with TB of messages
   * high throughput for both publishing and subscribing messages
 * scalable
-* fault tolerant
-* strong ordering guarantees
-* consumer can rewind back to an old offset and re-consume data
+* distributed storage
+  * immediatly written to disk and replicated (fault-tolerance)
+  * strong ordering guarantees, configurable retention period
+* flexible consuming
+  * consumer can rewind back to an old offset / re-consume data
+  * load balanced with using same consumer-group
 
 
