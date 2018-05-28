@@ -97,10 +97,10 @@ Kafka's support for very large stored log data makes it an excellent backend for
  With a commit log one can replicate data between nodes and acts as a re-syncing mechanism for failed nodes to restore their data.  
 +++  
 ### JustGo Examples
-* Data Migration from v1 to v2: new v2 can read all input-data from the topic again, stores data in its new format
-* Events: Events come into the system via kafka-queue, multiple microservices can read the topic at diffrent times/steps, while the data flows though our system ( geo-locations  are comüosed to train-journeys)
+* Data Migration from v1 to v2: new v2 service can read all input-data from the topic again, stores data in its new format
+* Events: Events come into the system via kafka-queue, multiple microservices read that topic at different times
 * Fallback: persistent Dead-Letter Queue
-* Bug-Fixing: simply re-read the whole topic after fixing a bug during processing of messages from topic
+* Bug-Fixing: simply re-read the whole topic after fixing a bug which affected meassage processing
 ---  
 
 ## Wrap Up!
@@ -108,6 +108,7 @@ Kafka's support for very large stored log data makes it an excellent backend for
   * handle a large number of diverse consumers
   * stable performance even with TB of messages
   * high throughput for both publishing and subscribing messages
++++  
 * scalable
 * distributed storage
   * immediately written to disk and replicated (fault-tolerance)
