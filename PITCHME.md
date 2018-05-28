@@ -117,15 +117,18 @@ With a commit log one can replicate data between nodes and acts as a re-syncing 
 * data migration from v1 to v2
   * new v2 service can read all input-data from the topic again, stores data in its new format
 
-+++
++++  
+
 * events
   * multiple microservices read event topics at different times during our processing
 
-+++
++++  
+ 
 * fallback
   * persistent Dead-Letter Queue
 
-+++
++++  
+
 * bug-fixing
   * simply re-read the whole topic after fixing a bug which affected massage processing
 
