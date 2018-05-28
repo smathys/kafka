@@ -77,6 +77,7 @@
 * stateful aggregations,filtering,transformations
 * small lightweight microservices instead of batch processing at big data clusters
 
++++   
 ### KSQL
 * Streaming SQL Engine
 * use SQL on top of Kafka Streams for processing streams
