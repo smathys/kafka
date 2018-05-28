@@ -33,24 +33,24 @@
 * Multiple brokers
 * Horizontal scale out without downtime 
 * Manage the persistence and replication of message data
-+++ 
++++  
 ### Broker
 * Kafka cluster typically consists of multiple brokers to maintain load balance
 * Kafka brokers are stateless ( ZooKeeper is used for maintaining their cluster state)
 * One Kafka broker instance can handle hundreds of thousands of reads and writes per second
 * Each broker can handle TB of messages without performance impact.
 * Kafka broker leader election by ZooKeeper.  
-+++
++++  
 ### Topic
 ![topic](https://kafka.apache.org/0102/images/log_anatomy.png)
 * Each partition contains messages in an immutable ordered sequence  
 * Each partition is consumed by exactly one consumer in the group
-+++ 
++++  
 ### Producer
 * Publisher of messages to one or more Kafka topics
 * Send data to Kafka brokers
 * Every time a msg is sent to a broker, the broker appends the message to the last segment file.  
-+++ 
++++  
 
 ### Consumer
 * Read data from brokers
@@ -60,14 +60,15 @@
 
 ---
 ### Ecosystem
++++  
 ![ecosystem](assets/image/kafka-apis.jpg)
-+++
++++  
 ### Kafka Connect
 * easy to add new systems to your existing data pipelines
 * move large collections of data into and out of Kafka
 * [Connectors](https://www.confluent.io/product/connectors)
 
-+++
++++  
 ### Kafka Streams  
 * enable real-time processing of streams
 * stateless stream processing
@@ -81,7 +82,7 @@
 * use SQL on top of Kafka Streams for processing streams
 * sliding windows, windowing functions
 ---
-## Use Cases
+### Use Cases
 +++  
 ### Messaging
 Kafka works well as a replacement for a more traditional message broker.   
@@ -106,7 +107,7 @@ Kafka's support for very large stored log data makes it an excellent backend for
 * performance !!!
   * handle a large number of diverse consumers
   * stable performance even with TB of messages
-  * high throughput for both publishing and subscribing messages
+  * high throughput for both publishing and subscribing messages  
 +++  
 * scalable
 * distributed storage
