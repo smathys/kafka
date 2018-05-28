@@ -13,7 +13,7 @@ Kafka® is used for building real-time data pipelines and streaming apps. It is 
 ![fits](https://www.confluent.io/wp-content/uploads/chart-kafka-infrastructure@2x.png)
 +++  
 
-used for:
+### What for?  
 * read & write streams of data like a messaging system  
  (pub/sub and queue messaging)
 * stream processing
