@@ -64,10 +64,15 @@
 ![ecosystem](https://kafka.apache.org/11/images/kafka-apis.png)
 +++
 ### Connect
+* easy to add new systems to your stream data pipelines
+*  move large collections of data into and out of Kafka
+[Connectors](https://www.confluent.io/product/connectors)
+
 +++
 ### Stream Processors  
 * enable real-time processing of streams
-* 
+* stateless stream processing
+* stateful aggregation
 ---
 ## Use Cases
 +++  
