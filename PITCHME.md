@@ -25,7 +25,7 @@
 
 ### Overview
 +++
-
+@title(
 ![cluster](https://www.tutorialspoint.com/apache_kafka/images/fundamentals.jpg)
 +++  
 ### Cluster
@@ -54,17 +54,19 @@
 
 ### Broker
 * Kafka cluster typically consists of multiple brokers to maintain load balance
- * Kafka brokers are stateless ( ZooKeeper is used for maintaining their cluster state)
-  * One Kafka broker instance can handle hundreds of thousands of reads and writes per second
-  * Each broker can handle TB of messages without performance impact.
-  * Kafka broker leader election can be done by ZooKeeper.  
+* Kafka brokers are stateless ( ZooKeeper is used for maintaining their cluster state)
+* One Kafka broker instance can handle hundreds of thousands of reads and writes per second
+* Each broker can handle TB of messages without performance impact.
+* Kafka broker leader election can be done by ZooKeeper.  
 ---
 ### Ecosystem
 ![ecosystem](https://kafka.apache.org/11/images/kafka-apis.png)
 +++
 ### Connect
 +++
-### Stream Processors
+### Stream Processors  
+
+It isn't enough to just read, write, and store streams of data, the purpose is to enable real-time processing of streams
 ---
 ## Use Cases
 +++  
