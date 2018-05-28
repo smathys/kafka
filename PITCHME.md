@@ -88,10 +88,8 @@ Kafka's support for very large stored log data makes it an excellent backend for
 * Events: Events come into the system via kafka-queue, multiple microservices can read the topic at diffrent times/steps, while the data flows though our system ( geo-locations  are comüosed to train-journeys)
 * Fallback: persistent Dead-Letter Queue
 * Bug-Fixing: simply re-read the whole topic after fixing a bug during processing of messages from topic
----
-## Getting Started
+---  
 
----
 ## Wrap Up!
 * performance !!!
   * handle a large number of diverse consumers
