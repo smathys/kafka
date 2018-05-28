@@ -11,6 +11,9 @@
 ### Where?  
 
 ![fits](https://www.confluent.io/wp-content/uploads/chart-kafka-infrastructure@2x.png)
+
+[Kafka Clients](https://cwiki.apache.org/confluence/display/KAFKA/Clients)
+
 +++  
 
 ### What for?  
