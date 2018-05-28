@@ -43,7 +43,6 @@
 +++
 ### Topic
 ![topic](https://kafka.apache.org/0102/images/log_anatomy.png)
-* A partition is a set of segment files of equal sizes
 * Each partition contains messages in an immutable ordered sequence  
 * Each partition is consumed by exactly one consumer in the group
 +++ 
@@ -58,7 +57,6 @@
 * Subscribe to one or more topics
 * Consume published messages by pulling data from the brokers
 * Manages the offset (index from which one wants to read from)  
-+++
 
 ---
 ### Ecosystem
@@ -116,6 +114,6 @@ Kafka's support for very large stored log data makes it an excellent backend for
   * strong ordering guarantees, configurable retention period
 * flexible consuming
   * consumer can re-consume & reprocess already read messages
-  * load balanced with using same consumer-group dynamically
+  * load balanced with consumer-groups -> dynamically
 
 
