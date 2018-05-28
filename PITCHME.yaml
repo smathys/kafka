@@ -10,6 +10,6 @@ highlight : github-gist
 logo : assets/image/logo-1.jpg
 background : assets/image/binary.jpg
 background-opacity : 10
-transition : none
+transition : fade
 published : true
 footnote : "Susanne Mathys - <a href='https://gitpitch.com/smathys/kafka/master#/'>Apache Kafka</a>"
